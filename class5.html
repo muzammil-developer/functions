@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="index.html" onMouseOut="onMouseOut(this)" onMouseOver="onMouseOver(this)">Home Page</a>
+
+    <input type="text" size="30" onBlur="onBlurHandler(this)" onFocus="onFocusHandler(this)"> 
+
+    <form onSubmit="submitFormHandler(event)">
+      Email:
+      <input type="text" id="email-field" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form>
+        zipcode:
+        <input type="number" id="zipcode" onblur="onBlurHandler()" />
+        city:
+        <input type="text" id="city" />
+    </form>
+
+
+    <script src="class5.js"></script>
+  </body>
+</html>
