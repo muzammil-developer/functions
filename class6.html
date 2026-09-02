@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .invisible {
+        visibility: hidden;
+      }
+
+      .big {
+        height: 600px;
+      }
+
+      .border-thick {
+        border: 2px solid black;
+      }
+
+      .hide-row {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <a href="index.html" onMouseOut="onMouseOut(this)" onMouseOver="onMouseOver(this)">Home Page</a>
+
+    <input type="text" size="30" onBlur="onBlurHandler(this)" onFocus="onFocusHandler(this)"> 
+
+    <form onSubmit="submitFormHandler(event)">
+      Email:
+      <input type="text" id="email-field" />
+      <input type="submit" value="Submit" />
+    </form> -->
+
+    <form>
+      zipcode:
+      <input type="number" id="zipcode" onblur="onBlurHandler()" />
+      city:
+      <input type="text" id="city" onblur="onBlurCityHandler()" />
+    </form>
+
+    <p id="slowLoris">
+      Slow lorises are a group of several species of strepsirrhine primates
+      which make up the genus Nycticebus.
+      <a href="javascript:void(0);" onClick="expandLoris();"
+        ><em>Click for more.</em></a
+      >
+    </p>
+
+
+<div>
+    <img src="images.jpg" height="300px" onmouseout="makeVisible()" onmouseover="makebig()" id="image" />
+</div>
+
+    <table border="1px solid">
+      <tr>
+        <th>Name </th>
+        <th>Course</th>
+        <th>Batch</th>
+        <th />
+      </tr>
+      
+      <tr id="row-1">
+        <td>Ali</td>
+        <td>Web And Mobile</td>
+        <td>22</td>
+        <td><button onclick="removeRow('row-1')">Remove</button></td>
+      </tr>
+
+      <tr id="row-2">
+        <td>Umer</td>
+        <td>Web And Mobile</td>
+        <td>22</td>
+        <td><button onclick="removeRow('row-2')">Remove</button></td>
+      </tr>
+
+      <tr id="row-3">
+        <td>usman</td>
+        <td>Web And Mobile</td>
+        <td>22</td>
+        <td><button onclick="removeRow('row-3')">Remove</button></td>
+      </tr>
+    </table>
+
+    <script src="class6.js"></script>
+  </body>
+</html>
