@@ -46,6 +46,23 @@ function checkPassword(password, confirm_password) {
   }
 }
 
+function checkemail(email) {
+  if (email.includes(" ")) {
+    throw "No empty spaces are allowed in email";
+  }
+
+  var atTheRateIndex = email.indexof("@");
+  var emailLength = email.length;
+
+  if (
+    atTheRateIndex < 1 ||
+    atTheRateIndex >= emailLength - 5 ||
+    atTheRateIndex >= emailLength - 4
+  ) {
+    throw "Please Provide Correct Format Of Email";
+  }
+}
+
 function signup(e) {
   e.preventDefault();
 
@@ -59,6 +76,7 @@ function signup(e) {
     }
 
     checkUsername(username);
+    checkemail(email);
     checkPassword(password, confirm_password);
   } catch (error) {
     alert(error);
